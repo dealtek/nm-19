@@ -7,17 +7,30 @@
 
     <!-- versionCode is optional and Android only DM iFrame v3 -->
 
-    <name>NMI v-17</name>
+    <name>NMI v-19</name>
 
-    <description>View web pages in an iFrame</description>
+    <description>Independent Drivers Consortium</description>
 
-    <icon src="DM-LOGO-128.png" />
+    <!--<icon src="DM-LOGO-128.png" />-->
+	
+	<icon src="icon.png" />
+	
+	<!-- iPhone 6 / 6+ -->
+<icon src="icon-60@3x.png" gap:platform="ios" width="180" height="180" />
+
+<!-- iPhone / iPod Touch  -->
+<icon src="icon-60.png" gap:platform="ios" width="60" height="60" />
+<icon src="icon-60@2x.png" gap:platform="ios" width="120" height="120" />
 
     <!--<gap:platform name="android" />-->
 
     <!--<preference name="orientation" value="portrait" />-->
 	
     <!-- Customize your app and platform with the preference element. -->
+	
+	<preference name="StatusBarOverlaysWebView" value="true" />
+	<preference name="StatusBarBackgroundColor" value="#FFF" />
+	
     <preference name="phonegap-version"           value="3.7.0" />          <!-- all: current version of PhoneGap -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
@@ -52,5 +65,6 @@
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
+	<gap:plugin name="com.phonegap.plugin.statusbar" />
 
 </widget>
